@@ -1,5 +1,5 @@
 # Myti-GUI-APP
-<h1>Myki Clone - Java FX</h1>
+Myki Clone - Java FX
 
 <hr>
 <ul>
