@@ -1,5 +1,5 @@
 # Myti-GUI-APP
-<h1>Java FX GUI App</h1>
+<h1>Java FX</h1>
 
 <hr>
 <ul>
