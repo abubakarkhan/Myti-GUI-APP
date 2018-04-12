@@ -13,12 +13,12 @@ Java FX GUI App
 <li>Data is saved back to the text file when the program is terminated</li>
 <li>UI itself is self explanatory</li>
 <li><ul>Default Cards
-  <li>X1 (Has User Attached Lawrence)</li>
-  <li>X2 (Has User Attached Charles)</li>
-  <li>X3</li>
-  <li>X4</li>
-  <li>X5</li>
-  </ul>
+<li>X1 (Has User Attached Lawrence)</li>
+<li>X2 (Has User Attached Charles)</li>
+<li>X3</li>
+<li>X4</li>
+<li>X5</li>
+</ul>
 </li>
 <li>The functionality to change user and add new cards was out of
 the scope of the assignment so it was not added.</li>
