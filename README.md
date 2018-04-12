@@ -1,5 +1,5 @@
 # Myti-GUI-APP
-Java FX GUI App
+<h1>Java FX GUI App</h1>
 
 <hr>
 <ul>
@@ -12,13 +12,16 @@ Java FX GUI App
 <li>Data is loaded from text files when the program is launched</li>
 <li>Data is saved back to the text file when the program is terminated</li>
 <li>UI itself is self explanatory</li>
-<li><ul>Default Cards
+<li>The functionality to change user and add new cards was out of
+the scope of the assignment so it was not added.</li>
+</ul>
+<hr>
+<h3>Default Cards</h3>
+<ul>
 <li>X1 (Has User Attached Lawrence)</li>
 <li>X2 (Has User Attached Charles)</li>
 <li>X3</li>
 <li>X4</li>
 <li>X5</li>
 </ul>
-</li>
-<li>The functionality to change user and add new cards was out of
-the scope of the assignment so it was not added.</li>
+
