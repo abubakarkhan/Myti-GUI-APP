@@ -1,0 +1,209 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane style="-fx-background-color: #ddffff" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="myti.TakeJourneyWindowMyController">
+    <fx:define>
+        <ToggleGroup fx:id="journeyStartToggleGroup" />
+        <ToggleGroup fx:id="journeyEndToggleGroup" />
+        <ToggleGroup fx:id="journeyDayToggleGroup" />
+    </fx:define>
+    <top>
+        <HBox alignment="CENTER" spacing="20" style="-fx-background-color: #022b2b">
+            <padding>
+                <Insets bottom="30" left="10" right="10" top="30" />
+            </padding>
+            <Label text="1. Please Select Your Card" textFill="white">
+                <font>
+                    <Font name="Apple SD GothicNeo ExtraBold" size="34.0" />
+                </font>
+            </Label>
+            <ChoiceBox fx:id="myTiCardChoiceBox" />
+        </HBox>
+    </top>
+    <center>
+        <GridPane vgap="10" hgap="20" alignment="CENTER">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <Label text="2. Select Journey Start Station" GridPane.columnIndex="0"
+                   GridPane.rowIndex="0" GridPane.columnSpan="2" alignment="CENTER">
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label text="Zone 1 Stations" GridPane.columnIndex="0"
+                   GridPane.rowIndex="1">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+            </Label>
+            <RadioButton text="Central" textAlignment="CENTER" GridPane.columnIndex="0"
+                         GridPane.rowIndex="2" toggleGroup="$journeyStartToggleGroup" selected="true">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Richmond" textAlignment="CENTER" GridPane.columnIndex="0"
+                         GridPane.rowIndex="3" toggleGroup="$journeyStartToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Flagstaff" textAlignment="CENTER" GridPane.columnIndex="0"
+                         GridPane.rowIndex="4" toggleGroup="$journeyStartToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <Label text="Zone 2 Stations" GridPane.columnIndex="0"
+                   GridPane.rowIndex="5">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+            </Label>
+            <RadioButton text="Epping" textAlignment="CENTER" GridPane.columnIndex="0"
+                         GridPane.rowIndex="6"  toggleGroup="$journeyStartToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Lilydale" textAlignment="CENTER" GridPane.columnIndex="0"
+                         GridPane.rowIndex="7" toggleGroup="$journeyStartToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <Label text="3. Select Journey End Station" GridPane.columnIndex="3"
+                   GridPane.rowIndex="0" GridPane.columnSpan="2" alignment="CENTER">
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label text="Zone 1 Stations" GridPane.columnIndex="3"
+                   GridPane.rowIndex="1">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+            </Label>
+            <RadioButton text="Central" textAlignment="CENTER" GridPane.columnIndex="3"
+                         GridPane.rowIndex="2" toggleGroup="$journeyEndToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Richmond" textAlignment="CENTER" GridPane.columnIndex="3"
+                         GridPane.rowIndex="3" toggleGroup="$journeyEndToggleGroup" selected="true">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Flagstaff" textAlignment="CENTER" GridPane.columnIndex="3"
+                         GridPane.rowIndex="4" toggleGroup="$journeyEndToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <Label text="Zone 2 Stations" GridPane.columnIndex="3"
+                   GridPane.rowIndex="5">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+            </Label>
+            <RadioButton text="Epping" textAlignment="CENTER" GridPane.columnIndex="3"
+                         GridPane.rowIndex="6" toggleGroup="$journeyEndToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton text="Lilydale" textAlignment="CENTER" GridPane.columnIndex="3"
+                         GridPane.rowIndex="7" toggleGroup="$journeyEndToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <Label text="4. Select Travel Day" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                <padding>
+                    <Insets top="20"/>
+                </padding>
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="9" spacing="5" GridPane.columnSpan="4">
+                <RadioButton text="Monday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup" selected="true">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Tuesday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Wednesday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Thursday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Friday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Saturday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton text="Sunday" textAlignment="CENTER" toggleGroup="$journeyDayToggleGroup">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </RadioButton>
+            </HBox>
+            <Label text="5. Select Travel Time" GridPane.columnIndex="0" GridPane.rowIndex="10">
+            <padding>
+                <Insets top="20"/>
+            </padding>
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+            </Label>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="11" spacing="5">
+                <Spinner fx:id="hourSelection" min="0" max="23" editable="false" initialValue="12" prefWidth="60"/>
+                <Label text=" : ">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Spinner fx:id="minutesSelection" min="0" max="59" editable="false" initialValue="30" prefWidth="60"/>
+            </HBox>
+        </GridPane>
+    </center>
+    <bottom>
+        <HBox spacing="20" style="-fx-background-color: #022b2b" alignment="CENTER">
+            <padding>
+                <Insets bottom="30" left="10" right="10" top="30" />
+            </padding>
+            <Button prefHeight="20" prefWidth="200" style="-fx-background-color: #ddffff" text="Take Journey"
+                    textFill="#022b2b" onAction="#handleTakeJourneyButton">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button prefHeight="20" prefWidth="200" style="-fx-background-color: #ddffff"
+                    text="Back" textFill="#022b2b" onAction="#handleBackButton">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Button>
+        </HBox>
+    </bottom>
+</BorderPane>

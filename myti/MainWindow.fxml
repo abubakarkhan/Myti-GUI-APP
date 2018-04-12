@@ -1,0 +1,95 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainBorderPane" style="-fx-background-color: #ddffff"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="myti.MainWindowController">
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-background-color: #022b2b">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="20" />
+            </padding>
+           <children>
+               <Label text="Public Transport Melbourne" textAlignment="CENTER" textFill="white">
+               <font>
+                  <Font name="Apple SD GothicNeo ExtraBold" size="34.0" />
+               </font>
+               </Label>
+           </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="CENTER_LEFT" prefWidth="500" spacing="10">
+            <padding>
+                <Insets bottom="10" left="50" right="10" top="10" />
+            </padding>
+           <children>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="Purchase Travel Pass" textFill="white" onAction="#handleButton1Action">
+               <font>
+                   <Font name="Arial Bold" size="24.0" />
+               </font>
+               </Button>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="Re-charge MyTi / View Balance" textFill="white" onAction="#handleButton2Action">
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="Take a Journey" textFill="white" onAction="#handleButton3Action" >
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="View All Journeys " textFill="white" onAction="#handleButton4Action">
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="Show Statistics" textFill="white" onAction="#handleButton5Action">
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+               <Button prefHeight="80" prefWidth="400" style="-fx-background-color: #022b2b"
+                       text="Add a New User" textFill="white" onAction="#handleButton6Action">
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+           </children>
+        </VBox>
+    </center>
+    <right>
+        <StackPane alignment="CENTER" prefWidth="500">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+           <children>
+                  <ImageView fitWidth="350.0" preserveRatio="true" fx:id="cardImageView">
+                  </ImageView>
+           </children>
+        </StackPane>
+    </right>
+    <bottom>
+        <HBox alignment="CENTER">
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+           <children>
+               <Button fx:id="quitButton" prefHeight="20" prefWidth="300"
+                       style="-fx-background-color: #022b2b" text="Exit" textFill="white" onAction="#handleExitButton">
+                   <font>
+                       <Font name="Arial Bold" size="24.0" />
+                   </font>
+               </Button>
+           </children>
+        </HBox>
+    </bottom>
+</BorderPane>

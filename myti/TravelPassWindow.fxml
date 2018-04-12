@@ -1,0 +1,225 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane style="-fx-background-color: #ddffff" xmlns="http://javafx.com/javafx/8.0.76-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="myti.TravelPassWindowMyController">
+    <fx:define>
+        <ToggleGroup fx:id="passTypeToggleGroup" />
+        <ToggleGroup fx:id="zoneToggleGroup" />
+        <ToggleGroup fx:id="dayToddleGroup"/>
+    </fx:define>
+    <top>
+        <HBox alignment="CENTER" spacing="20" style="-fx-background-color: #022b2b">
+            <padding>
+                <Insets bottom="30" left="10" right="10" top="30" />
+            </padding>
+            <Label text="1. Please Select Your Card" textFill="white">
+                <font>
+                    <Font name="Apple SD GothicNeo ExtraBold" size="34.0" />
+                </font>
+            </Label>
+            <ChoiceBox fx:id="myTiCardChoiceBox"/>
+        </HBox>
+    </top>
+    <left>
+        <VBox spacing="20">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="40" />
+            </padding>
+            <Label text="2. Select Pass Type">
+                <padding>
+                    <Insets bottom="10" left="10" right="10" top="10" />
+                </padding>
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <RadioButton fx:id="twoHourPassRadioButton" text="2 Hour Pass" textAlignment="CENTER" selected="true"
+                         toggleGroup="$passTypeToggleGroup">
+            <font>
+               <Font size="18.0" />
+            </font>
+            </RadioButton>
+            <RadioButton fx:id="allDayPassRadioButton" text="All Day Pass" textAlignment="CENTER" toggleGroup="$passTypeToggleGroup">
+            <font>
+               <Font size="18.0" />
+            </font>
+            </RadioButton>
+            <VBox>
+                <padding>
+                    <Insets bottom="20" left="10" right="20" top="40" />
+                </padding>
+                <Label text="5. Select Time">
+                    <font>
+                        <Font name="Apple SD GothicNeo ExtraBold" size="24.0" />
+                    </font>
+                </Label>
+                <HBox spacing="10">
+                    <padding>
+                        <Insets left="10" right="20" top="10" bottom="10"/>
+                    </padding>
+                    <Spinner fx:id="hourSpinner" min="0" max="23" editable="false" initialValue="12" maxWidth="60"/>
+                    <Label text=" : ">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <Spinner fx:id="minutesSpinner" min="0" max="59" editable="false" initialValue="30" maxWidth="60"/>
+                </HBox>
+            </VBox>
+        </VBox>
+    </left>
+    <center>
+        <VBox spacing="20" >
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="40" />
+            </padding>
+            <Label text="3. Select Zone">
+                <padding>
+                    <Insets bottom="10" left="10" right="10" top="10" />
+                </padding>
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <RadioButton fx:id="zoneOneRadioButton" text="Zone 1" textAlignment="CENTER" selected="true"
+                         toggleGroup="$zoneToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="zoneOneAndTwoRadioButton" text="Zone 1 &amp; Zone 2" textAlignment="CENTER"
+                         toggleGroup="$zoneToggleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+        </VBox>
+    </center>
+    <right>
+        <VBox spacing="20">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="40" />
+            </padding>
+            <Label text="4. Select Day of Purchase/Travel" wrapText="true">
+                <padding>
+                    <Insets bottom="10" left="10" right="10" top="10" />
+                </padding>
+                <font>
+                    <Font name="Arial Bold" size="24.0" />
+                </font>
+            </Label>
+            <RadioButton fx:id="mondayRadioButton" text="Monday" textAlignment="CENTER" selected="true"
+                         toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="tuesdayRadioButton" text="Tuesday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="wednesdayRadioButton" text="Wednesday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="thursdayRadioButton" text="Thursday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="fridayRadioButton" text="Friday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="saturdayRadioButton" text="Saturday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+            <RadioButton fx:id="sundayRadioButton" text="Sunday" textAlignment="CENTER" toggleGroup="$dayToddleGroup">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </RadioButton>
+        </VBox>
+    </right>
+    <bottom>
+        <GridPane style="-fx-background-color: #022b2b" gridLinesVisible="false" prefHeight="250">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <Label text="Travel Pass Prices :" textFill="white"
+                   GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+                <padding>
+                    <Insets bottom="20"/>
+                </padding>
+            </Label>
+            <Accordion GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"
+                       GridPane.rowSpan="2" expandedPane="$tp1">
+                <panes>
+                    <TitledPane fx:id="tp1" text="2 Hour Zone 1 Pass">
+                        <Label text = " $3.50" />
+                    </TitledPane>
+                    <TitledPane text="2 Hour Zone 1 &amp; 2 Pass">
+                        <Label text = " $5.00" />
+                    </TitledPane>
+                    <TitledPane text="All Day Zone 1 Pass">
+                        <Label text = " $6.90" />
+                    </TitledPane>
+                    <TitledPane text="All Day Zone 1 &amp; 2 Pass">
+                        <Label text = " $9.80" />
+                    </TitledPane>
+                </panes>
+            </Accordion>
+            <Label fx:id="statusLabel" text=" " textFill="white" prefWidth="500"
+                   wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="100" right="50"/>
+                </padding>
+            </Label>
+            <Label text="Select Card To View Balance" textFill="white" fx:id="currentBalanceLabel" prefWidth="500" wrapText="true"
+                   GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="100" right="50"/>
+                </padding>
+            </Label>
+            <Label text=" " textFill="lime" fx:id="purchaseSuccessLabel" prefWidth="500" wrapText="true"
+                   GridPane.columnIndex="2" GridPane.rowIndex="3">
+                <font>
+                    <Font name="Arial Bold" size="20.0" />
+                </font>
+                <padding>
+                    <Insets left="100" right="50"/>
+                </padding>
+            </Label>
+            <Button fx:id="purchaseTravelPassButton" prefHeight="20" prefWidth="200" GridPane.columnIndex="3"
+                    GridPane.rowIndex="0" onAction="#handlePurchaseTravelPassButton"
+                    style="-fx-background-color: #ddffff" text="Purchase Travel Pass" textFill="#022b2b" >
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Button>
+            <Button prefHeight="20" prefWidth="200" GridPane.columnIndex="3" GridPane.rowIndex="2"
+                    style="-fx-background-color: #ddffff" text="Back" textFill="#022b2b" onAction="#handleBackButton">
+                <font>
+                    <Font name="Arial Bold" size="15.0" />
+                </font>
+            </Button>
+        </GridPane>
+    </bottom>
+
+</BorderPane>
