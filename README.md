@@ -12,8 +12,7 @@ Java FX GUI App
 <li>Data is loaded from text files when the program is launched</li>
 <li>Data is saved back to the text file when the program is terminated</li>
 <li>UI itself is self explanatory</li>
-<li>
-  <ul>Default Cards
+<li><ul>Default Cards
   <li>X1 (Has User Attached Lawrence)</li>
   <li>X2 (Has User Attached Charles)</li>
   <li>X3</li>
