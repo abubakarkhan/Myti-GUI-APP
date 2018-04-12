@@ -14,10 +14,10 @@ Java FX GUI App
 <li>UI itself is self explanatory</li>
 <li>
   <ul>Default Cards
-  <li></li>o X1 (Has User Attached Lawrence) o X2 (Has User Attached Charles)
-  <li></li>o X3
-  <li></li>o X4
-  <li></li>o X5
+  <li></li>X1 (Has User Attached Lawrence) o X2 (Has User Attached Charles)
+  <li></li>X3
+  <li></li>X4
+  <li></li>X5
   </ul>
 </li>
 <li>The functionality to change user and add new cards was out of
